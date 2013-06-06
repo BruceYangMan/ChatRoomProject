@@ -8,7 +8,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Vector;
 
-public class ClientOneToMany_Server {
+public class ClientOneToMany_Server_bk {
 	private ServerSocket server; // 宣告ServerSocket對像
     private Socket socket; // 宣告Socket對像socket
     private Vector<Socket> vector = new Vector<Socket>();// 用於儲存連接到服務器的客戶端套接字對像
@@ -59,7 +59,7 @@ public class ClientOneToMany_Server {
     }
     
     public static void main(String args[]){
-    	ClientOneToMany_Server frame = new ClientOneToMany_Server();
+    	ClientOneToMany_Server_bk frame = new ClientOneToMany_Server_bk();
     	frame.createSocket();
     }
     

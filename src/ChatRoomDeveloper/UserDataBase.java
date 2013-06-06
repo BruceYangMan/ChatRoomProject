@@ -23,8 +23,8 @@ public class UserDataBase extends JFrame{
 	      errorMessage("MySQL驅動程式安裝失敗！");
 	    }
 	    try {
-	      connection = DriverManager.getConnection("jdbc:mysql://203.68.167.42/members"
-	                   +"?user=bruce&password=lion204270");
+	      connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1/members"
+	                   +"?user=root&password=lion204270");
 	      statement = connection.createStatement();
 	      //connectMessage("OK");
 	    } catch (SQLException e) { 

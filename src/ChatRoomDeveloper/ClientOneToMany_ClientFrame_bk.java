@@ -136,7 +136,7 @@ public class ClientOneToMany_ClientFrame_bk extends JFrame{
 	
 	public void createClientSocket(){
 		try {
-			Socket socket = new Socket("203.68.167.42",8124);
+			Socket socket = new Socket("127.0.0.1",8124);
 			output = new PrintWriter(socket.getOutputStream(),true);
 			new ClientThread(socket).start();
 		} catch (UnknownHostException e) {

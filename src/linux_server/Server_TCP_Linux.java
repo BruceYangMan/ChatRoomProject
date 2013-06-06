@@ -1,3 +1,6 @@
+package linux_server;
+
+
 import java.io.*;
 import java.net.*;
 
@@ -14,7 +17,7 @@ Server_TCP_Linux(){
 public void getServer(){
 		try{
 			server = new ServerSocket(8124);
-			server.setSoTimeout(10000);
+			//server.setSoTimeout(10000);
 			System.out.println("Server Connection...");
 			while(true){
 				System.out.println("Watting Client Connection..");
